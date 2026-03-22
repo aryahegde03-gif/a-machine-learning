@@ -27,10 +27,10 @@ with st.sidebar:
   City=st.selectbox('City',('Kimport'))
   Index=st.slider('Index',1,2,3)
 
-  data={'Index',Index,
-      'Company',Company,
-      'City',City,
-      'Country',Country}
+  data={'Index':Index,
+      'Company':Company,
+      'City':City,
+      'Country':Country}
   input_df=pd.DataFrame(data,index=[0])
 
 input_df
