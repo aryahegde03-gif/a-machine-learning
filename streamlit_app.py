@@ -23,3 +23,6 @@ with st.expander('Data visualization'):
 
 with st.sidebar:
   st.header('Input features')
+  Company=st.selectbox('Company',('Murillo-Perry','Vega-Gentry'))
+  City=st.selectbox('City',('Kimport'))
+  Index=st.slider('Index',1,2,3)
