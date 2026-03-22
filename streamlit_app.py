@@ -9,3 +9,11 @@ with st.expander('Data'):
   st.write('**Raw Data**')
   df=pd.read_csv('https://raw.githubusercontent.com/aryahegde03-gif/a-machine-learning/refs/heads/master/customers-100.csv')
   df
+
+  st.write('**X**')
+  X=df.drop('index',axis=1)
+  X
+
+  st.write('**Y**')
+  Y=df.index
+  Y
