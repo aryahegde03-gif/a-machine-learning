@@ -17,3 +17,6 @@ with st.expander('Data'):
   st.write('**Y**')
   Y=df.Index
   Y
+
+with st.expander('Data visualization'):
+  st.scatter_chart(data=df, x='Index',y='Company',color='City')
