@@ -20,3 +20,6 @@ with st.expander('Data'):
 
 with st.expander('Data visualization'):
   st.scatter_chart(data=df, x='Index',y='Company',color='City')
+
+with st.sidebar:
+  st.header('Input features')
