@@ -26,3 +26,11 @@ with st.sidebar:
   Company=st.selectbox('Company',('Murillo-Perry','Vega-Gentry'))
   City=st.selectbox('City',('Kimport'))
   Index=st.slider('Index',1,2,3)
+
+  data={'Index',Index,
+      'Company',Company,
+      'City',City,
+      'Country',Country}
+  input_df=pd.DataFrame(data,index=[0])
+
+input_df
